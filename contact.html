@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navbar with Bootstrap Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" onclick="loadContent('index.html', this)">Your Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" onclick="loadContent('index.html', this)">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" onclick="loadContent('about.html', this)">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html" onclick="loadContent('contact.html', this)">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="mt-5">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <!-- Carousel items as before -->
+    </div>
+
+    <div class="container mt-4" id="dynamic-content">
+        <!-- Content container as before -->
+    </div>
+</section>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
